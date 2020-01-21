@@ -1,0 +1,200 @@
+@media only screen and (max-width: 770px){
+
+  .header li a:hover::after,.header-index li a:hover::after, .header nav li a.active::after {
+  	display: none;
+  }
+
+  .header li a:hover {
+    font-size: 20px;
+    background: #7e1548;
+    color: #fff;
+  }
+
+  .header-index li a:hover {
+    font-size: 20px;
+    background: #7e1548;
+    color: #fff;
+  }
+
+
+.mobile-btn {
+  display: block;
+  color:  #7e1548;
+  width: 36px;
+  height: 36px;
+  border-top: 4px solid;
+  margin: 20px 20px 0 0;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  -webkit-backface-visibility:hidden;
+}
+
+.mobile-btn::after, .mobile-btn::before {
+  content: "";
+  display: block;
+  height: 4px;
+  margin-top: 6px;
+  background: currentColor;
+  position: relative;
+  transition: transform .2s ease;
+}
+
+.mobile-btn.active {
+  border-top-color: transparent;
+}
+
+.mobile-btn.active::after {
+  margin-top: 0px;
+  top: 2px;
+  transform: rotate(45deg);
+}
+
+.mobile-btn.active::before {
+  margin-top:  0px;
+  top: 6px;
+  transform: rotate(135deg);
+}
+
+.menu-nav.mobile-menu {
+  position: absolute;
+  background: white;
+  padding: 10px;
+  top: 100px;
+  right: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(60px, 0px, 0px);
+  transition: .3s;
+}
+
+.menu-nav.mobile-menu.active {
+  width: 100%;
+  background: #e9ebee;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(00px, 0px, 0px);
+}
+
+.menu-nav.mobile-menu li {
+  display: block;
+}
+
+.menu-nav.mobile-menu li  {
+  padding: 2px;
+  border-bottom:  2px solid #7e1548;
+  width: 100%;
+  text-align: center;
+
+ }
+
+ .subtitulo_valores{
+     font-size: 22px;
+     
+
+ }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+/*home */
+.main h1 {
+  font-size: 1.9em;
+}
+
+/*quem somos */
+
+.subtitulo_quemSomos h1 {
+  text-align: center;
+}
+
+
+.subtitulo_quemSomos:after{
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background: #7e1548;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin: 10px auto;
+
+}
+
+.quem_somos {
+  text-align: center;
+
+}
+
+.sobre_escritorio {
+  text-align: center;
+}
+
+/*Equipe */
+
+.container_equipe {
+  text-align: center;
+}
+
+.subtitulo_equipe:after{
+  margin: 10px auto;
+}
+
+.subtitulo_equipe_nome {
+  font-size: 22px;
+  letter-spacing: 0.02em;
+
+}
+
+.order{
+  order: -2;
+}
+.subtitulo_equipe_nome:after{
+  margin: 10px auto;
+}
+/* Area de Atuação */
+
+.container_area {
+  text-align: center;
+}
+
+.subtitulo_equipe_area {
+  font-size: 22px;
+}
+
+.subtitulo_area:after, .subtitulo_equipe_area::after{
+ margin: 10px auto;
+}
+
+/* Contato */
+
+.container_contato {
+  text-align: center;
+}
+
+.subtitulo_contato:after{
+margin: 10px auto;
+}
+
+.dados {
+  margin: 0 auto;
+}
+
+/*Footer */
+.footer {
+  text-align: center;
+}
+
+.redes_sociais ul li a img{
+  margin-left: 70px;
+}
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .widget {
+    display: none;
+  }
+}
